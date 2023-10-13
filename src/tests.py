@@ -2,15 +2,11 @@ import unittest
 from src.dragon_class import Dragon
 
 
-class DragonInitTest(unittest.TestCase):
+class DragonTest(unittest.TestCase):
 
     def test_init_dragon_name(self):
         dragon = Dragon("Wawelski")
         self.assertEquals(dragon.name, 'Wawelski')
-
-
-class DragonMoveTest(unittest.TestCase):
-    dragon1 = Dragon("Wawelski")
 
     def test_new_position(self):
         dragon1 = Dragon("Wawelski")
@@ -19,4 +15,7 @@ class DragonMoveTest(unittest.TestCase):
         self.assertEquals(dragon1.move(10, 15, 0, 0), (5, 40))
         self.assertEquals(dragon1.move(0, 15, 5, 0), (20, 35))
         self.assertEquals(dragon1.move(0, 0, 0, 5), (20, 40))
+
+    def test_dragon_demage(self):
+        pass
 

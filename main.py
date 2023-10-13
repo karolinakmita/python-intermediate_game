@@ -18,3 +18,14 @@ print(f"x= {dragon1.x}, y= {dragon1.y}")
 dragon1.move(0, 0, 0, 5)
 print(f"x= {dragon1.x}, y= {dragon1.y}")
 
+print(dragon1.lifepoints)
+
+print(f"Smok zaatakował {dragon1.attack()} tyle punktów życia")
+
+dragon1.dragon_demage(10)
+dragon1.dragon_demage(20)
+dragon1.dragon_demage(30)
+dragon1.dragon_demage(40)
+dragon1.dragon_demage(50)
+
+
