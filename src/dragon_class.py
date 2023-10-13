@@ -3,6 +3,8 @@ from random import randint
 
 class Dragon:
     """
+    >>> from random import seed
+    >>> seed(0)
     >>> dragon1 = Dragon('Wawelski')
     >>> print(dragon1.name)
     Wawelski
@@ -16,8 +18,11 @@ class Dragon:
     (20, 35)
     >>> dragon1.move(0, 0, 0, 5)
     (20, 40)
+    >>> dragon1.dragon_demage(10)
+    >>> dragon1.lifepoints
+    89
     """
-    def __init__(self, name, x=1, y=2, lifepoints=0):
+    def __init__(self, name, x=1, y=2):
         self.name = name
         self.x = x
         self.y = y
