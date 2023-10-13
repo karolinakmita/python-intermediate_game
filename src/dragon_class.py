@@ -1,4 +1,4 @@
 class Dragon:
-    def __int__(self, name):
+    def __init__(self, name):
         self.name = name
 
